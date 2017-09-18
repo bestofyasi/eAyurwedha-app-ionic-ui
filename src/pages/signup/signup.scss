@@ -1,0 +1,23 @@
+page-signup {
+  .user-image{
+    width: 23%;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+  }
+  .text-input::-moz-placeholder {
+    color:#7CB658;
+  }
+
+  .text-input:-ms-input-placeholder {
+    color: #7CB658;
+  }
+
+  .text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    color: #7CB658;
+  }
+  .para{
+    font-size: 19px;
+  }
+}

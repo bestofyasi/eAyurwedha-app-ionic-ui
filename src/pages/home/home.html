@@ -1,0 +1,85 @@
+
+<ion-header>
+    <ion-item style="padding-bottom:3px;" color="primary" no-lines>
+        <ion-avatar item-start>
+          <img src="assets/icon/user.png">
+        </ion-avatar>
+        <!--<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>-->
+        <ion-icon name="md-search" item-end></ion-icon>
+        <ion-icon name="md-notifications-outline" item-end></ion-icon>
+        <ion-badge style="background-color:red;" item-end>2</ion-badge>
+        <ion-icon name="md-log-out" (click)="logout()" item-end></ion-icon>
+      </ion-item>
+</ion-header>
+<ion-content >
+
+  <ion-item no-lines style="background-color:rgba(8, 0, 32, 0);">
+    <p style="padding-left:20px;">Good Affternoon!</p>
+    <h2 style="padding-left:20px;margin-top:-5px;font-size:40px;color:#000000">Jon Snow</h2>
+    <ion-icon name="md-sunny" style="zoom:2.2;color:#FAD400;" item-end></ion-icon>
+  </ion-item>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 >
+         <ion-card style="background-color:#face15;">
+          <ion-card-header>
+           <ion-row>
+              <h1 style="font-size: 70px; color:#fff">6</h1>
+              <ion-col> <p style="font-size: 20px; color:#fff"> PM</p>  </ion-col>
+              <ion-icon name="md-time" item-end style="zoom:1.8;margin-left:2px;color:#fbe8a4" ></ion-icon>
+            </ion-row>
+              <h3 style="font-size:17px;color:#f9f1ca">Next Medication</h3>
+          </ion-card-header>
+           <ion-card-content>
+           </ion-card-content>
+
+           <ion-list style="color:#fff;">
+              <button detail-none style="background-color:#fcb800; color:#fff; border-color:#fff;" ion-item (click)="openClass()"> View
+                <ion-icon item-end name="arrow-forward"></ion-icon>
+              </button>
+           </ion-list>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+         <ion-card style="background-color:#f31e60;">
+          <ion-card-header>
+           <ion-row>
+              <h1 style="font-size: 70px;color:#fff">2</h1>
+              <ion-col> <p style="font-size: 20px; color:#fff"></p>  </ion-col>
+              <ion-icon name="md-document" item-end style="zoom:1.8;margin-left:2px;color:#ffa6c1" ></ion-icon>
+            </ion-row>
+           <h3 style="font-size:17px;color:#ffa6c1">Updated Reports</h3>
+          </ion-card-header>
+           <ion-card-content>
+
+           </ion-card-content>
+           <ion-list>
+            <button detail-none ion-item (click)="openAss()" style="background-color:#f31e60; color:#fff; border-color:#fff;"> View
+               <ion-icon item-end name="arrow-forward"></ion-icon>
+            </button>
+           </ion-list>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card style="background-color:#6000e9;">
+    <ion-card-header>
+      <ion-row>
+         <h1 style="font-size: 70px;color:#fff">10</h1>
+         <ion-icon name="md-checkmark-circle" item-end style="zoom:1.8;margin-left:110px;color:#9459e9" ></ion-icon>
+       </ion-row>
+      <h3 style="font-size:17px;color:#9459e9">To do item</h3>
+    </ion-card-header>
+     <ion-card-content>
+
+     </ion-card-content>
+      <ion-list>
+        <button detail-none ion-item (click)="openTodo()" style="background-color:#6000e9; color:#fff; border-color:#fff;"> View
+           <ion-icon item-end name="arrow-forward"></ion-icon>
+        </button>
+      </ion-list>
+  </ion-card>
+</ion-content>
