@@ -1,3 +1,7 @@
+import { CommentsPage } from './../comments/comments';
+import { TipsTreatmetPage } from './../tips-treatmet/tips-treatmet';
+import { TipsMedicinePage } from './../tips-medicine/tips-medicine';
+import { TipsGenaralPage } from './../tips-genaral/tips-genaral';
 import { Component } from '@angular/core';
 import {AlertController, IonicPage,  NavController,  NavParams} from 'ionic-angular';
 
@@ -81,5 +85,9 @@ export class ForumPage {
       ]
     });
     prompt.present();
+  }
+
+  ClickComment(){
+    this.navCtrl.push(CommentsPage);
   }
 }

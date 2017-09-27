@@ -18,36 +18,8 @@
 </ion-header>
 
 <ion-content padding>
-  <h3 style="color:#7CB658;margin-top:10px;">Select Category</h3>
-    <ion-scroll scrollX="true">
-    <ion-card>
-        <img class="card" src="assets/m2.jpg"/>
-        <ion-card-content>
-          <ion-card-title>
-            Genaral
-            </ion-card-title>
-        </ion-card-content>
-      </ion-card>
-      <ion-card>
-          <img class="card"src="assets/m1.jpg"/>
-          <ion-card-content>
-            <ion-card-title>
-              Medicine
-              </ion-card-title>
-          </ion-card-content>
-        </ion-card>
-
-        <ion-card>
-            <img class="card" src="assets/m3.jpg"/>
-            <ion-card-content>
-              <ion-card-title>
-                Treatment
-              </ion-card-title>
-            </ion-card-content>
-          </ion-card>
-    </ion-scroll>
     <h3 style="color:#7CB658;margin-bottom:20px;">Recently Added</h3>
-    <ion-card>
+    <ion-card (click)="ClickComment()">
         <ion-card-header>
           Header
         </ion-card-header>
@@ -103,7 +75,9 @@
             </ion-col>
           </ion-row>
     </ion-card>
-    <ion-card>
+
+    <h3 style="color:#7CB658;margin-bottom:20px;">Last Month</h3>
+    <ion-card (click)="ClickComment()">
         <ion-card-header>
           Header
         </ion-card-header>
